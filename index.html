@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гра в квадрати</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="firstLine">Choose difficulty:
+	<select name="chooseDifficulty" id="difficulty">
+		<option value="">--Please choose an option--</option>
+		<option value="ease">Ease</option>
+		<option value="medium">Medium</option>
+		<option value="hard">Hard</option>
+	</select>
+	Choose color:
+	<select name="chooseColor" id="color">
+		<option value="">--Please choose an option--</option>
+		<option value="blue">Blue</option>
+		<option value="red">Red</option>
+		<option value="green">Green</option>
+	</select>
+	<button id="startButton">Start</button>
+  </div>
+  <div id="firLiRight"><div id="score"></div>-------<div id="timer"></div></div>
+  <div id="gameBoard"></div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Game Over</h1>
+		<h3>Please restart page to Restart</h3>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
